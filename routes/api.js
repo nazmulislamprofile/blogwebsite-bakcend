@@ -18,9 +18,9 @@ router.post("/login", login);
 // Blog Routes
 router.get("/getBlogs",getBlogs);
 router.get("/getBlogById/:id",getBlogById);
-router.post("/createBlog",authMiddleware, createBlog);
-router.put("/updateBlog/:id",authMiddleware, updateBlog);
-router.delete("/deleteBlog/:id",authMiddleware, deleteBlog);
+router.post("/createBlog", createBlog);
+router.put("/updateBlog/:id",updateBlog);
+router.delete("/deleteBlog/:id",deleteBlog);
 
 export default router;
   
