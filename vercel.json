@@ -2,5 +2,5 @@
 
     "version":2,
     "builds":[{"src":"./app.js","use":"@vercel/node"}], 
-    "rewrites": [{ "src": "/(.*)", "dest": "/" }] 
+    "rewrites": [{ "source": "/(.*)", "dest": "/" }] 
 }
