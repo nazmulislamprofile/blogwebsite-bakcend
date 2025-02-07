@@ -16,8 +16,8 @@ router.post("/register", register);
 router.post("/login", login);
 
 // Blog Routes
-router.get("/getBlogs",authMiddleware, getBlogs);
-router.get("/getBlogById/:id",authMiddleware, getBlogById);
+router.get("/getBlogs",getBlogs);
+router.get("/getBlogById/:id",getBlogById);
 router.post("/createBlog",authMiddleware, createBlog);
 router.put("/updateBlog/:id",authMiddleware, updateBlog);
 router.delete("/deleteBlog/:id",authMiddleware, deleteBlog);
